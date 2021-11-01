@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+</html lang="pl">
+ 
+<head>
+ 
+	<meta charset="utf-8"/>
+	
+	<title>To do</title>	
+	
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+	
+</head>
+ 
+<body>
+
+	<!-- 
+	
+	https://codepen.io/franklynroth/pen/ZYeaBd
+	
+	https://www.w3schools.com/jsref/prop_search_value.asp
+	
+	https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_search_value
+	
+	-->	
+	
+	<div class="container">
+      <p>
+		<h3 id="h_title">Lista zadań do wykonania</h3>
+		
+        <label for="new-task">Dodaj zadanie</label>		
+			
+			<form class="todo-form">	 	    
+		
+			<input type="text" id="new-task" class="todo-input" placeholder="Kod">
+			<input type="text" id="new-task2" placeholder="Zadanie">
+			<input type="date" id="new-task3" placeholder="Termin">			
+			<!-- <br><button>Add</button> -->
+			<br><button type="submit" class="add-button">Add</button>		
+				
+			<!-- <input id="check-task" type="text">	
+				<button id="checkButton" onclick="checkTask()" >Check</button> -->
+				
+			<!-- <input type="text" onfocus="this.value=''" value="Click here to clear"> -->
+			
+			
+			<!-- <input type="text" class="todo-input" placeholder="Add a Todo..."> -->
+			
+			 </form>
+			<button onclick="clear_input()" class="buttons">Clear</button>
+			
+			<!-- <button onclick="searchTask()">Search</button> -->
+			<button onclick="search_task()" class="buttons">Search</button>
+			
+      </p>
+      
+      <h3>Do zrobienia...</h3>
+      <ul id="incomplete-tasks" class="todo-items">
+       
+		  <!-- 
+		  <li class="item" data-key="1594003133171">
+		  
+			<input class="checkbox" type="checkbox">
+					Go to Gym
+					
+			<button class="delete-button">X</button>
+			
+		  </li>	-->
+		
+      </ul>           
+      
+    </div>
+	
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+ 
+ 
+</html>
